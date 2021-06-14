@@ -17,7 +17,7 @@
                }
       </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <a class="navbar-brand" href="">Cursos | UTEZ</a>
+        <a class="navbar-brand" href="#">Cursos | UTEZ</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,7 +28,7 @@
               <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="view/instructores.html">Instructores</a>
+              <a class="nav-link" href="#">Instructores</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,48 +47,80 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
-      </nav>
+    </nav>
       <br>
+      
       <div class="container">
-          <div class="row">
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card" ">
-                    <img style="width: 200px;" src="img/innovationbanner_720.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Creatividad y diseño</h5>
-                      <p class="card-text">Expande tu imaginación para crear obras de arte.</p>
-                      <a href="view/registrame.html" class="btn btn-primary">Registrarme</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card" ">
-                    <img style="width: 200px;" src="img/Database-System_0.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Database System</h5>
-                      <p class="card-text">Administra sistemas de bases de datos como un experto.</p>
-                      <a href="view/registrame.html" class="btn btn-primary">Registrarme</a>                    </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card" ">
-                    <img style="width: 200px;" src="img/Android_0.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Aplicaciones móviles</h5>
-                      <p class="card-text">Desarrolla aplicaciónes móviles de manera personal.</p>
-                      <a href="view/registrame.html" class="btn btn-primary">Registrarme</a>                    </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card" ">
-                    <img style="width: 200px;" src="img/EstrategiasNegociacion_0.jpg" class="card-img-top rounded mx-auto d-block" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Finanzas corporativas</h5>
-                      <p class="card-text">Gestiona las finanzas de cualquier empresa. </p>
-                      <a href="view/registrame.html" class="btn btn-primary">Registrarme</a>                    </div>
-                  </div>
-              </div>
+        <div class="row">
+          <div class="col-6 offset-3">
+            <fieldset>
+              <legend>Formulario Registro </legend>
+      
+      
+              <form action="" method="POST">
+                <ul>
+                  <li>
+                    <label for="nombre" name="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre">
+                  </li>
+                  <li>
+                    <label for="primerApellido" name="nombre">Primer Apellido: </label>
+                    <input type="text" name="primerApellido" id="primerApellido">
+                  </li>
+                  <li>
+                    <label for="segundoApellido" name="nombre">Segundo Apellido: </label>
+                    <input type="text" name="segundoApellido" id="segundoApellido">
+                  </li>
+                  <li>
+                    <label for="#">Tipo de Modalidad: </label>
+
+                    <input type="checkbox" id="presencial" value="presencial"></input>
+                    <label for="presencial"> Presencial</label>
+
+                    <input type="checkbox" id="remoto" value="remoto"></input>
+                    <label for="remoto"> Remoto</label>
+
+                    <input type="checkbox" id="mixto" value="mixto"></input>
+                    <label for="mixto"> Mixto</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="sexo" id="hombre" value="hombre"></input>
+                    <label for="hombre"> Hombre</label>
+
+                    <input type="radio" name="sexo" id="mujer" value="mujer"></input>
+                    <label for="mujer"> Mujer</label>
+                  </li>
+                  <li>
+                    <label for="curso">Curso: </label>
+                    <select name="curso" id="curso">
+                      <option value="0">Seleccione... </option>
+                      <option value="1">Creatividad y diseño </option>
+                      <option value="2">Database system </option>
+                      <option value="3">Aplicaciones móviles con Android </option>
+                      <option value="4">Finanzas corporativas </option>
+                    </select>
+                  </li>
+                  <li>
+                    <label for="observaciones">Observaciones: </label>
+                    <br>
+                    <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10"></textarea>
+
+                  </li>
+                  <li>
+                    <input type="submit" value="registrar" name="registrar" id="registrar">
+                    <input type="reset" value="Cancelar" name="reset" id="reset">
+                  </li>
+                </ul>      
+      
+              </form>
+            </fieldset>
+      
           </div>
+      
+      
+      
+      
+        </div>
       </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
