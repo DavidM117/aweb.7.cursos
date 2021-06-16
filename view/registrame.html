@@ -56,61 +56,77 @@
             <fieldset>
               <legend>Formulario Registro </legend>
       
-      
               <form action="" method="POST">
-                <ul>
-                  <li>
-                    <label for="nombre" name="nombre">Nombre: </label>
-                    <input type="text" name="nombre" id="nombre">
-                  </li>
-                  <li>
-                    <label for="primerApellido" name="nombre">Primer Apellido: </label>
-                    <input type="text" name="primerApellido" id="primerApellido">
-                  </li>
-                  <li>
-                    <label for="segundoApellido" name="nombre">Segundo Apellido: </label>
-                    <input type="text" name="segundoApellido" id="segundoApellido">
-                  </li>
-                  <li>
-                    <label for="#">Tipo de Modalidad: </label>
 
-                    <input type="checkbox" id="presencial" value="presencial"></input>
-                    <label for="presencial"> Presencial</label>
+                <div class="form-group">
+                  <label for="nombre" name="nombre">Nombre: </label>
+                  <input class="form-control" type="text" name="nombre" id="nombre">
+                </div>
 
-                    <input type="checkbox" id="remoto" value="remoto"></input>
-                    <label for="remoto"> Remoto</label>
+                <div class="form-group">
+                  <label for="primerApellido" name="nombre">Primer Apellido: </label>
+                  <input class="form-control" type="text" name="primerApellido" id="primerApellido">
+                </div>
 
-                    <input type="checkbox" id="mixto" value="mixto"></input>
-                    <label for="mixto"> Mixto</label>
-                  </li>
-                  <li>
-                    <input type="radio" name="sexo" id="hombre" value="hombre"></input>
-                    <label for="hombre"> Hombre</label>
+                <div class="form-group">
+                  <label for="segundoApellido" name="nombre">Segundo Apellido: </label>
+                  <input class="form-control" type="text" name="segundoApellido" id="segundoApellido">
+                </div>
 
-                    <input type="radio" name="sexo" id="mujer" value="mujer"></input>
-                    <label for="mujer"> Mujer</label>
-                  </li>
-                  <li>
-                    <label for="curso">Curso: </label>
-                    <select name="curso" id="curso">
+                <div class="form-group">
+                  <label for="#">Tipo de Modalidad: </label>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="presencial" value="presencial"></input>
+                    <label class="form-check-label" for="presencial"> Presencial</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="remoto" value="remoto"></input>
+                    <label class="form-check-label" for="remoto"> Remoto</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="mixto" value="mixto"></input>
+                    <label class="form-check-label" for="mixto"> Mixto</label>
+                  </div>
+
+                </div>
+
+                <div class="form-group">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="hombre" value="hombre"></input>
+                    <label class="form-check-label"  for="hombre"> Hombre</label>
+                  </div>
+
+                  <div class="form-check"> 
+                    <input class="form-check-input" type="radio" name="sexo" id="mujer" value="mujer"></input>
+                    <label class="form-check-label"  for="mujer"> Mujer</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="curso">Curso: </label>
+                    <select class="form-control" name="curso" id="curso">
                       <option value="0">Seleccione... </option>
                       <option value="1">Creatividad y diseño </option>
                       <option value="2">Database system </option>
                       <option value="3">Aplicaciones móviles con Android </option>
                       <option value="4">Finanzas corporativas </option>
                     </select>
-                  </li>
-                  <li>
-                    <label for="observaciones">Observaciones: </label>
-                    <br>
-                    <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10"></textarea>
+                </div>
 
-                  </li>
-                  <li>
-                    <input type="submit" value="registrar" name="registrar" id="registrar">
-                    <input type="reset" value="Cancelar" name="reset" id="reset">
-                  </li>
-                </ul>      
+                <div class="form-group">
+                  <label for="observaciones">Observaciones: </label>
+                    <br>
+                    <textarea class="form-control" style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <input type="submit" value="registrar" name="registrar" id="Registrar">
+                  <input type="reset" value="Cancelar" name="reset" id="reset">
+                </div>
       
               </form>
             </fieldset>
